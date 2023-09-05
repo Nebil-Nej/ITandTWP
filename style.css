@@ -14,6 +14,129 @@ This Theme is made for the company IT and T solution and for betterment on the w
 */
 
 body {
-    background-color: yellow;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #fff;
+    font-family: "Open Sans", sans-serif;
+}
+
+body.tag-50,
+body.category-9 {
+    background-color: #a7ff91;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.site-title {
+    font-family: "Varela Round", sans-serif;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    margin: 2rem 0 1rem;
+}
+
+h2.search-title {
+    text-transform: capitalize;
+}
+
+a {
+    color: #494329;
+}
+
+.site-header a {
+    text-decoration: none;
+}
+
+pre {
+    background: #222;
+    padding: 10px;
+    border: 1px #777 solid;
+    color: #ededed;
+    font-family: monospace;
+    font-size: 1rem;
+}
+
+video {
+    max-width: 100%;
+}
+
+ul {
+    padding-left: 0;
+    margin-left: 20px;
+    list-style-position: outside;
+}
+
+.site-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0 0 1rem 0;
+}
+
+#masthead,
+footer.site-footer {
+    margin: 2rem auto 1rem;
+    text-align: center;
+    width: 80%;
+}
+
+#footer-menu li,
+.main-navigation li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+#footer-menu li a,
+.main-navigation li a {
+    padding: 5px;
+}
+
+#footer-menu li:hover>a,
+.main-navigation li:hover>a {
+    color: red;
+}
+
+#footer-menu li.current-menu-item>a,
+#footer-menu li.current-page-parent>a,
+.main-navigation li.current-menu-item>a,
+.main-navigation li.current-page-parent>a {
+    font-weight: bold;
+    color: #494329;
+}
+
+.main-navigation li ul {
+    display: none
+}
+
+.main-navigation li:hover ul {
+    display: block;
+    position: absolute;
+    margin-left: -10px;
+    z-index: 100;
+    background: #feca5c;
+    padding: 5px 10px;
+}
+
+.main-navigation li:hover ul li {
+    display: block;
+    margin: .5rem 0;
+}
+
+#content {
+    background: #000;
+    color: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 1020px;
+    border-radius: 5px;
+    position: relative;
+    overflow: auto;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
 }
