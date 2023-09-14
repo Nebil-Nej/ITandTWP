@@ -11,10 +11,10 @@
 <body <?php body_class(); ?>>
     <div id="page">
         <a href="#content" class="skip-link screen-reader-text">
-            <?php echo esc_html_e('Skip to Content', 'wphierarchy') ?>
+            <?php echo esc_html_e('Skip to Content', 'itandt') ?>
         </a>
 
-        <header id="masthead" class="main-navigation" role="navigation">
+        <header id="masthead" class="site-header" role="banner">
             <div class="site-branding">
                 <p class="site-title">
                     <a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
@@ -36,4 +36,4 @@
             </nav>
         </header>
 
-        <div id="content" class="">
+        <div id="content" class="site-content">
