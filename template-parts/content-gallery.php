@@ -2,6 +2,7 @@
     <header class="entry-header">
         <span class="dashicons dashicons-format-<?php echo get_post_format($post->ID); ?>">
         </span>
+        <p c><?php esc_html_e('GALLERY GALLERY GALLERY!!!' ,'itandt') ; ?></p>
         <?php the_title('<h1>', '</h1>'); ?>
         <div class="byline"></div>
         <?php esc_html_e('Author:'); ?>

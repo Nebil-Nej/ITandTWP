@@ -2,18 +2,15 @@
     <header class="entry-header">
         <span class="dashicons dashicons-format-<?php echo get_post_format($post->ID); ?>">
         </span>
-        <?php the_title('<h1>', '</h1>'); ?>
+        <?php the_title('<h2 class="the_title_permalink"><a href="'.esc_url(get_permalink()).'">', '</a></h2>'); ?>
         <div class="byline"></div>
         <?php esc_html_e('Author:'); ?>
-        <?php the_author(); ?>
+        <?php the_author_posts_link(); ?>
     </header>
     <div class="entry-content">
         <p>
-            <?php the_content(); ?>
+            <?php the_excerpt(); ?>
         </p>
     </div>
-    <?php if (comments_open()): ?>
-        <?php comments_template() ?>
-    <?php endif; ?>
 
 </article>

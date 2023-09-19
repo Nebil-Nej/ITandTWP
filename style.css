@@ -524,6 +524,7 @@ blockquote.right {
   	font-weight: 700;
   	margin: 0;
   	padding-top: 1.75em;
+    color: white;
   }
 
   .comment-navigation + .no-comments {
@@ -617,4 +618,11 @@ blockquote.right {
   #content {
     width: 90% !important;
   }
+}
+
+/* Added By Nebil */
+
+.the_title_permalink a{
+  color: red;
+  text-decoration: none;
 }
