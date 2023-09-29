@@ -49,8 +49,28 @@ a {
     color: #494329;
 }
 
+.site-header {
+  margin: 0 auto;
+  padding: 0.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+}
+
 .site-header a {
     text-decoration: none;
+}
+
+.site-branding {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.site-branding img {
+  width: 100px;
+  height: 50px;
 }
 
 pre {
@@ -87,6 +107,7 @@ footer.site-footer {
     margin: 20px auto;
     text-align: center;
     width: 80%;
+    max-width: 1020px;
 }
 
 #footer-menu li,
@@ -139,7 +160,7 @@ footer.site-footer {
     padding: 20px;
     width: 80%;
     max-width: 1020px;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     position: relative;
     overflow: auto;
     -ms-word-wrap: break-word;
@@ -230,6 +251,17 @@ article.post {
   width: 100%;
   padding: .5rem;
 }
+
+.home #secondary {
+  width: 100%;
+  clear: both;
+}
+
+.home #secondary .widget {
+  width: 30%;
+  float: left;
+}
+
 
 #secondary {
   width: 25%;

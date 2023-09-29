@@ -18,7 +18,13 @@ add_theme_support('html5');
 add_theme_support('automatic-feed-links');
 add_theme_support('custom-background');
 add_theme_support('custom-header');
-add_theme_support('custom-logo');
+add_theme_support('custom-logo', array (
+    'height'      => 75,
+	'width'       => 200,
+	'flex-height' => true,
+	'flex-width'  => true,
+	'header-text' => array( 'site-title', 'site-description' ),
+));
 add_theme_support('customize-selective-refresh-widgets');
 add_theme_support('starter-content');
 
@@ -69,6 +75,24 @@ function itandt_widgets_init()
         'name' => esc_html__('Footer Sidebar', 'itandt'),
         'id' => 'footer-sidebar',
         'description' => esc_html__('Add Widgets for footer here', 'itandt'),
+        'before_widget' => '<section class="widget">',
+        'after_widget' => '</section>',
+        'before_title' => '<h2 class="widget-title">',
+        'after_title' => '</h2>'
+    ]);
+    register_sidebar([
+        'name' => esc_html__('Page Sidebar', 'itandt'),
+        'id' => 'page-sidebar',
+        'description' => esc_html__('Add Widgets for a Page here', 'itandt'),
+        'before_widget' => '<section class="widget">',
+        'after_widget' => '</section>',
+        'before_title' => '<h2 class="widget-title">',
+        'after_title' => '</h2>'
+    ]);
+    register_sidebar([
+        'name' => esc_html__('Front Page Sidebar', 'itandt'),
+        'id' => 'front-page',
+        'description' => esc_html__('Add Widgets for Front-Page here', 'itandt'),
         'before_widget' => '<section class="widget">',
         'after_widget' => '</section>',
         'before_title' => '<h2 class="widget-title">',
